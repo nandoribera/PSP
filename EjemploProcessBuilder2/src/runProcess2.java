@@ -1,9 +1,8 @@
-import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;
 
-public class RunProcess {
-
+public class runProcess2 {
+	
 	public static void main(String[] args) throws IOException {
 
 		if (args.length <= 0) {
@@ -14,8 +13,6 @@ public class RunProcess {
 		ProcessBuilder pb = new ProcessBuilder(args);
 
 		try {
-			pb.directory(new File("/home/ferviu/PSP/EjemploProcessBuilder2/bin"));
-			
 			Process process = pb.start();
 			int retorno = process.waitFor();
 			System.out.println("La ejecución de " + Arrays.toString(args) + " devuelve " + retorno);
