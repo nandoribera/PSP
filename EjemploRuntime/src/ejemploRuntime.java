@@ -14,12 +14,12 @@ public class ejemploRuntime {
 			try {
 				Process process = runtime.exec(args);
 				String respuesta = tcl.nextLine();
-				if(respuesta.length()>0 || respuesta.equalsIgnoreCase("")) {
+				if(respuesta.length() > 0 || respuesta.equalsIgnoreCase("")) {
 					process.destroy();
 					System.err.println("Proceso parado");
 				}
 			} catch (IOException ex) {
-				System.err.println("Excepción de E/S");
+				System.err.println("Excepcion de E/S");
 				System.exit(-1);
 			}
 		}

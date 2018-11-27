@@ -21,6 +21,6 @@ public class LanzaHilos {
 		
 		
 
-		System.out.println("Soy el hilo principal y he acabado");
+		System.out.println("Soy el hilo principal y he finalizado mi ejecución");
 	}
 }

@@ -2,7 +2,6 @@ import java.io.*;
 import java.util.*;
 
 public class holaMundo2 {
-
 	public static void main(String[] args) {
 		Scanner tcl = new Scanner(System.in);
 		String fichero = "fichero_texto.txt";
